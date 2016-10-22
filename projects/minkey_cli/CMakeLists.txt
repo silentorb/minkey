@@ -1,3 +1,3 @@
-create_library(minkey_cli)
+create_executable(minkey_cli)
 
 require(minkey)

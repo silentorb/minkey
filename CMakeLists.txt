@@ -4,10 +4,12 @@ if (NOT ANDROID)
   enable_language(CXX) # SINCE Compiler/Platform variables do not normally exist before a project command in CMake.
 endif ()
 
+set_property(GLOBAL PROPERTY USE_FOLDERS ON)
+
 include(../cmake-tools/scripts/generator-key.cmake)
 
 if (NOT MINGW)
-  project(mythical)
+  project(minkey)
   set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 endif ()
 
